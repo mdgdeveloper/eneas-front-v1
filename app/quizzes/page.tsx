@@ -39,10 +39,10 @@ const QuizzPage = (props: Props) => {
   ]
   return (
     <div className="pt-5 ">
-      <h2 className="text-4xl font-semibold pb-2">Welcome to AcademIA</h2>
-      <p className="text-xl font-light pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla id felis sit amet bibendum. In aliquet interdum magna convallis interdum. Nulla molestie sem a eros dictum commodo. Integer vel nunc odio. Praesent id ipsum tempor, egestas nisi et, venenatis nisi. Aenean quis vehicula sapien. Pellentesque quis bibendum sem. </p>
+      <h2 className="text-2xl font-semibold pb-2">Welcome to AcademIA</h2>
+      <p className="text-md font-light pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla id felis sit amet bibendum. In aliquet interdum magna convallis interdum. Nulla molestie sem a eros dictum commodo. Integer vel nunc odio. Praesent id ipsum tempor, egestas nisi et, venenatis nisi. Aenean quis vehicula sapien. Pellentesque quis bibendum sem. </p>
 
-      <h3 className="text-2xl font-semibold text-gray-800 pb-5">Modules Library</h3>
+      <h3 className="text-xl font-semibold text-gray-800 pb-5">Modules Library</h3>
       <div className="flex gap-5 flex-wrap">
         {
           modules.map((module, index) => (<Course key={index} {...module} />))
