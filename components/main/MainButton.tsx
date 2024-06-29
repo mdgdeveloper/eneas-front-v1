@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {
@@ -18,9 +19,9 @@ const MainButton = (props: Props) => {
     "darkblue": "bg-blue-800 hover:bg-orange-600 px-6 py-2 rounded-3xl text-white shadow-md flex cursor-pointer",
   }
   return (
-    <div className={buttonStyle[props.color]}>
+    <Link href={props.link}><div className={buttonStyle[props.color]}>
       {props.text}
-    </div>
+    </div></Link>
   )
 }
 

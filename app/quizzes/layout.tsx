@@ -16,7 +16,7 @@ export default function QuizzesLayout({ children }: Readonly<{ children: React.R
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <div>
         <Sidebar />
-        <div className="p-5">
+        <div className="p-5 sm:hidden sm:p-0">
           <MobileNav />
         </div>
       </div>

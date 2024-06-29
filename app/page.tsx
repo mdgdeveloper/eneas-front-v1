@@ -1,3 +1,4 @@
+import Header from "@/components/main/Header";
 import Logo from "@/components/main/Logo";
 import MainButton from "@/components/main/MainButton";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-
+      <Header />
       <div className="flex items-center justify-center gap-5 flex-col mt-32">
         <div className="pb-5">
           <Logo />
@@ -18,7 +19,7 @@ export default function Home() {
           Unlock your potential with AI-powered learning. Personalized Training and Progress Tracking for Technical mastery.
         </div>
         <div className="flex gap-5">
-          <MainButton color="blue" hover="bg-blue-200" text="Get Started Free" type="standard" link="/register" />
+          <MainButton color="blue" hover="bg-blue-200" text="Get Started Free" type="standard" link="/quizzes" />
           <MainButton color="darkblue" hover="bg-orange-100" text="Access to your dashboard" type="beta" link="/register" />
         </div>
       </div>

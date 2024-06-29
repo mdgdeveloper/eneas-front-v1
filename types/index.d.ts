@@ -7,6 +7,7 @@ export type QuestionType = {
 
 export type AreaType = {
   id: string
-  topic: string
-  title: string
+  cert: string
+  name: string
+  icon: string
 }
