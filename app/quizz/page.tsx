@@ -5,9 +5,9 @@ type Props = {}
 
 const QUESTION_DEMO: QuestionType = {
   id: "1212assd",
-  question: "What is the capital of France?",
+  question: "What is the capital of Spain?",
   answers: ["Paris", "London", "Berlin", "Madrid"],
-  correctAnswer: 0
+  correctAnswer: 3
 }
 
 const AREA_DEMO: AreaType = {

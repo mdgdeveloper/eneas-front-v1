@@ -11,12 +11,12 @@ type Props = {
 }
 
 const QuizzItem = (props: Props) => {
-  const [bgColor, setbgColor] = useState("bg-gray-400")
+  const [bgColor, setbgColor] = useState("bg-gray-400 border-gray-500 border-2")
 
   useEffect(() => {
     if (props.isDisabled) {
       if (props.isCorrect) {
-        setbgColor("bg-green-500")
+        setbgColor("bg-green-500 border-green-700 border-2")
       }
     }
   }, [props.isDisabled, props.isCorrect])
@@ -25,9 +25,9 @@ const QuizzItem = (props: Props) => {
   const handleClick = () => {
     if (props.isDisabled) return
     if (props.isCorrect) {
-      setbgColor("bg-green-500")
+      setbgColor("bg-green-500 border-green-700 border-2")
     } else {
-      setbgColor("bg-red-500")
+      setbgColor("bg-red-500 border-red-700 border-2")
     }
     props.onClick()
   }
